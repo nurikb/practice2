@@ -2,7 +2,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-header {
+nav {
     height: 50px;
     background-color: #212121;
 }
@@ -45,3 +45,61 @@ header {
     font-weight: 100;
     opacity: .5;
 }
+
+.subheader .subheader_call {
+    margin-top: 22px;
+    color: #FFF;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 300;
+    }
+
+.subheader .subheader_phone {
+    display: block;
+    margin-top: 8px;
+    color: #FFF;
+    text-align: right;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 12px;
+}
+
+.subheader .subheader_btn {
+    margin-top: 22px;
+    width: 172px;
+    height: 46px; 
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12);
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    color: #FFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.promo {
+    min-height: 800px;
+    background: url('/src/images/uber_bg.png') center center/cover no-repeat;
+}
+
+.promo .promo_header {
+    color: #FFF;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase; 
+}
+
+.promo .promo_subheader {
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase; 
+}
+

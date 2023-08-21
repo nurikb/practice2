@@ -1,6 +1,0 @@
-2023-08-21 13:27:59,185 DEBUG [0x00004f74] [abber-win\src\cefwrapper\src\cef.cpp(44)] [cefWrapper.cef] [CefWrapper::Cef::initialChildProcess] - initialChildProcess::Enter
-2023-08-21 13:28:30,744 DEBUG [0x00004f74] [abber-win\src\cefwrapper\src\cef.cpp(64)] [cefWrapper.cef] [CefWrapper::Cef::initialChildProcess] - initialChildProcess::Exit
-2023-08-21 13:28:33,023 DEBUG [0x0000488c] [abber-win\src\cefwrapper\src\cef.cpp(44)] [cefWrapper.cef] [CefWrapper::Cef::initialChildProcess] - initialChildProcess::Enter
-2023-08-21 13:46:23,761 DEBUG [0x0000488c] [abber-win\src\cefwrapper\src\cef.cpp(64)] [cefWrapper.cef] [CefWrapper::Cef::initialChildProcess] - initialChildProcess::Exit
-2023-08-21 13:46:37,235 DEBUG [0x00002a54] [abber-win\src\cefwrapper\src\cef.cpp(44)] [cefWrapper.cef] [CefWrapper::Cef::initialChildProcess] - initialChildProcess::Enter
-2023-08-21 13:47:07,412 DEBUG [0x00002a54] [abber-win\src\cefwrapper\src\cef.cpp(64)] [cefWrapper.cef] [CefWrapper::Cef::initialChildProcess] - initialChildProcess::Exit
