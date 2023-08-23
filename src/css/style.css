@@ -141,3 +141,67 @@ a {
     font-weight: 400;
     text-transform: uppercase;
 }
+
+.reasons {
+    /* min-height: 848.51px; */
+    padding: 20px 0 65px 0;
+}
+
+.label {
+    margin: 0 auto;
+    background-color: #000 ;
+    width: 113px;
+    height: 24px; 
+    color: #FFF;
+    text-align: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 5px 12px;
+}
+
+.title {
+    margin-top: 33px;
+    margin-bottom: 0;
+    color: #222;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.reasons .reasons_block {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.reasons .reasons_block .reasons_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 26px;
+    width: 113px;
+    height: 113px; 
+    border-radius: 100%;
+    background-color: #1EACC7;
+}
+
+.reasons .reasons_block .reasons_descr {
+    width: 343px;
+    margin-left: 25px;
+}
+
+.reasons .reasons_descr .reasons_subtitle {
+    color: #1EACC7;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.reasons .reasons_descr .reasons_text {
+    color: #202020;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px; 
+}
