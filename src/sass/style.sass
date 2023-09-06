@@ -1,4 +1,5 @@
 $images: "card_1.png", "card_2.png", "card_3.png", "card_4.png", "card_5.png", "card_6.png"
+$main-color: #1eacc7
 
 * 
 	font-family: 'Roboto', sans-serif 
@@ -60,7 +61,7 @@ a
 		border-radius: 4px 
 		border: none 
 		box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12) 
-		background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%) 
+		background: linear-gradient(0deg, $main-color 0%, #4CE2FF 100%) 
 		color: #FFF 
 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21) 
 		font-size: 14px 
@@ -101,7 +102,7 @@ a
 		height: 63px 
 		border: none 
 		border-radius: 4px 
-		background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%) 
+		background: linear-gradient(0deg, $main-color 0%, #4CE2FF 100%) 
 		box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.12) inset 
 		color: #FFF 
 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21) 
@@ -123,13 +124,13 @@ a
 			width: 113px 
 			height: 113px 
 			border-radius: 100% 
-			background-color: #1EACC7 
+			background-color: $main-color 
 		.reasons_descr 
 			width: 343px 
 			margin-left: 25px 
 	.reasons_descr 
 		.reasons_subtitle 
-			color: #1EACC7 
+			color: $main-color 
 			font-size: 17px 
 			font-weight: 400 
 			line-height: 21px 
@@ -147,22 +148,35 @@ a
 	text-align: center 
 	font-size: 11px 
 	text-transform: uppercase 
-	padding: 5px 12px 
+	padding: 5px 12px
+	&_white
+		position: relative
+		z-index: 2
+		background-color: #fff
+		color: #000
 .title 
-	margin-top: 33px 
+	margin-top: 40px 
 	margin-bottom: 0 
 	color: #222 
 	font-size: 38px 
 	font-weight: 700 
 	text-transform: uppercase 
 	text-align: center
+	&_white
+		position: relative
+		z-index: 2
+		color: #fff
 
 .subtitle 
 	color: #222222 
-	margin-top: 19px
+	margin-top: 5px
 	font-size: 17px
 	font-weight: 400
 	text-align: center
+	&_white
+		position: relative
+		z-index: 2
+		color: #fff
 
 .mobile
 	min-height: 864px 
@@ -202,5 +216,28 @@ a
 			border-radius: 100%
 			padding: 6px
 			cursor: pointer
-			
 
+.choice
+	position: relative
+	min-height: 900px
+	padding: 60px 0 138px 0
+	background: url('/src/images/mobile_bg.png') center center/cover
+	&_img
+		position: relative
+		display: block
+		margin: 56px auto 0 auto
+		z-index: 2
+	.black
+		position: absolute
+		top: 0
+		left: 0
+		height: 499px
+		width: 100%
+		background-color: #000
+		z-index: 1
+	&_descr
+		text-align: center
+		color: #222222
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
