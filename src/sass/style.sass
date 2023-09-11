@@ -1,5 +1,11 @@
 $images: "card_1.png", "card_2.png", "card_3.png", "card_4.png", "card_5.png", "card_6.png"
 $main-color: #1eacc7
+$white_color: #fff
+
+=btn_hover
+	&:hover
+		background-image: none
+		background-color: $main-color
 
 * 
 	font-family: 'Roboto', sans-serif 
@@ -10,6 +16,8 @@ nav
 	background-color: #212121 
 a 
 	text-decoration: none 
+.container
+	max-width: 1094px
 .menu 
 	display: flex 
 	justify-content: space-between 
@@ -17,7 +25,7 @@ a
 	margin: 0 
 	list-style-type: n one 
 	.menu_link 
-		color: #ffffff 
+		color: $white_color 
 		font-size: 15px 
 		font-weight: 300 
 	.menu_item 
@@ -34,21 +42,21 @@ a
 		margin-top: 16px 
 	.subheader_official 
 		margin-top: 6px 
-		color: #FFF 
+		color: $white_color 
 		font-size: 13px 
 		font-style: normal 
 		font-weight: 100 
 		opacity: .5 
 	.subheader_call 
 		margin-top: 22px 
-		color: #FFF 
+		color: $white_color 
 		text-align: right 
 		font-size: 12px 
 		font-weight: 300 
 	.subheader_phone 
 		display: block 
 		margin-top: 8px 
-		color: #FFF 
+		color: $white_color 
 		text-align: right 
 		font-size: 22px 
 		font-weight: 400 
@@ -62,17 +70,18 @@ a
 		border: none 
 		box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12) 
 		background: linear-gradient(0deg, $main-color 0%, #4CE2FF 100%) 
-		color: #FFF 
+		color: $white_color 
 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21) 
 		font-size: 14px 
 		font-weight: 400 
-		text-transform: uppercase 
+		text-transform: uppercase
+		+btn_hover
 .promo 
 	min-height: 800px 
 	background: url('/src/images/uber_bg.png') center center/cover no-repeat 
 	padding: 150px 0 135px 0 
 	.promo_header 
-		color: #FFF 
+		color: $white_color 
 		font-size: 60px 
 		font-weight: 700 
 		text-transform: uppercase 
@@ -80,7 +89,7 @@ a
 		line-height: 60px 
 		margin: 0 
 	.promo_subheader 
-		color: #FFF 
+		color: $white_color 
 		font-size: 36px 
 		font-weight: 700 
 		text-transform: uppercase 
@@ -89,7 +98,7 @@ a
 		margin: 0 
 		margin-top: 22px 
 	.promo_descr 
-		color: #FFF 
+		color: $white_color 
 		font-size: 19px 
 		font-weight: 400 
 		line-height: 24px 
@@ -104,11 +113,13 @@ a
 		border-radius: 4px 
 		background: linear-gradient(0deg, $main-color 0%, #4CE2FF 100%) 
 		box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.12) inset 
-		color: #FFF 
+		color: $white_color 
 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21) 
 		font-size: 18px 
 		font-weight: 400 
 		text-transform: uppercase 
+		+btn_hover
+			
 .reasons 
 	padding: 20px 0 65px 0 
 	.reasons_block 
@@ -144,7 +155,7 @@ a
 	background-color: #000 
 	width: 113px 
 	height: 24px 
-	color: #FFF 
+	color: $white_color 
 	text-align: center 
 	font-size: 11px 
 	text-transform: uppercase 
@@ -152,7 +163,7 @@ a
 	&_white
 		position: relative
 		z-index: 2
-		background-color: #fff
+		background-color: $white_color
 		color: #000
 .title 
 	margin-top: 40px 
@@ -165,7 +176,7 @@ a
 	&_white
 		position: relative
 		z-index: 2
-		color: #fff
+		color: $white_color
 
 .subtitle 
 	color: #222222 
@@ -176,7 +187,7 @@ a
 	&_white
 		position: relative
 		z-index: 2
-		color: #fff
+		color: $white_color
 
 .mobile
 	min-height: 864px 
@@ -195,7 +206,7 @@ a
 			&_#{$i}
 				background: url('/src/images/'+$src) center center/cover no-repeat
 		&_subtitle
-			color: #FFF
+			color: $white_color
 			text-align: center
 			font-size: 24px
 			font-style: normal
@@ -216,6 +227,24 @@ a
 			border-radius: 100%
 			padding: 6px
 			cursor: pointer
+			&::before
+				content: ''
+				background-color: $main-color
+				width: 14px
+				height: 2px
+				transition: 0.3s all
+			&::after
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				content: ''
+				background-color: $main-color
+				width: 2px
+				height: 14px
+				transition: 0.3s all
+			&:hover
+				&:before, &:after
+					background-color: #ff5656
 
 .choice
 	position: relative
@@ -241,3 +270,36 @@ a
 		font-size: 17px
 		font-weight: 300
 		line-height: 24px
+
+.conditions
+	padding: 65px 0 90px 0
+	&_block
+		margin: 33px 0
+		&_nmb
+			margin-bottom: 0
+	&_title
+		margin-top: 33px
+		color: $main-color
+		font-size: 22px
+		font-style: normal
+		font-weight: 400
+	&_list
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 22px
+		li
+			position: relative
+			font-size: 17px
+			font-style: normal
+			font-weight: 300
+			line-height: 24px
+			margin-bottom: 10px
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				left: -32px
+				top: 3px
+				width: 21px
+				height: 20px
+				background: url('../icons/mark.png')
