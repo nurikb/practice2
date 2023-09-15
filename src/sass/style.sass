@@ -11,9 +11,12 @@ $white_color: #fff
 	font-family: 'Roboto', sans-serif 
 header 
 	position: relative 
-nav 
+nav
+	width: 100%
+	position: fixed
 	height: 50px 
-	background-color: #212121 
+	background-color: #212121
+	z-index: 5
 a 
 	text-decoration: none 
 .container
@@ -283,6 +286,7 @@ a
 		font-size: 22px
 		font-style: normal
 		font-weight: 400
+
 	&_list
 		list-style-type: none
 		padding-left: 50px
@@ -303,3 +307,92 @@ a
 				width: 21px
 				height: 20px
 				background: url('../icons/mark.png')
+	&_descr
+		margin-top: 25px
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
+		color: #1ca8c3
+		
+	.warning
+		.conditions_title
+			color: #FF5656
+		li
+			&::before
+				background: url('../icons/mark_red.png')
+
+.world
+	background-color: #080816
+	&_main
+		position: relative
+		min-height: 716px 
+		background: url('/src/images/world_bg.png') center center/cover no-repeat
+		padding: 50px 0 46px 0
+		.all_cities
+			text-align: center
+			a
+				position: absolute
+				bottom: 49px
+				left: 50%
+				transform: translateX(-50%)
+				color: $main-color
+				font-size: 15px
+				font-style: normal
+				font-weight: 400
+				text-transform: uppercase
+
+footer
+	min-height: 156px
+	width: 100%
+	background-color: #fff
+	padding: 12px 20px 38px 20px
+
+.footer
+	&_line
+		display: block
+		width: 301px
+		height: 7px
+		margin: 0 auto
+		background-color: $main-color
+	&_wrapper
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 32px
+		// div
+		// 	width: 33%
+	&_social
+		width: 160px
+		display: flex
+		justify-content: space-between
+		&_item
+			display: flex 
+			justify-content: center
+			align-items: center
+			margin: 0 4px 
+			background-color: #070716
+			width: 32px
+			height: 32px
+			border-radius: 100%
+			i
+				color: #fff
+	&_links
+		&_main
+			display: flex
+			justify-content: space-between
+			&_item
+				color: #070716
+				font-family: Roboto
+				font-size: 15px
+				font-style: normal
+				font-weight: 300
+				text-transform: uppercase
+			&_item:not(:last-child)
+				margin-right: 46px
+	&_mobile
+		&_item
+			width: 94px
+			height: 27px
+			background-color: black
+	
+			
