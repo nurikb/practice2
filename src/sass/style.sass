@@ -359,8 +359,11 @@ footer
 		justify-content: space-between
 		align-items: flex-start
 		padding-top: 32px
-		// div
-		// 	width: 33%
+	&_wrapper > div
+		width: 33%
+		&:nth-child(3)
+			display: flex
+			justify-content: flex-end
 	&_social
 		width: 160px
 		display: flex
@@ -377,22 +380,51 @@ footer
 			i
 				color: #fff
 	&_links
-		&_main
-			display: flex
+		width: 390px
+		margin: 0 auto
+		&_main 
+			display: flex 
 			justify-content: space-between
-			&_item
+			padding: 0 10px
+			a 
 				color: #070716
-				font-family: Roboto
 				font-size: 15px
-				font-style: normal
 				font-weight: 300
 				text-transform: uppercase
-			&_item:not(:last-child)
-				margin-right: 46px
+		&_sub 
+			display: flex 
+			justify-content: space-between
+			margin-top: 10px
+			a 
+				color: #999999
+				font-size: 11px
+				font-weight: 300
+				text-transform: uppercase
+
 	&_mobile
+		display: flex
+		gap: 8px
+		a > &_item > i
+			color: #fff
+			font-size: 20px
 		&_item
-			width: 94px
-			height: 27px
+			padding: 4px 10px 2px 10px
 			background-color: black
+			border-radius: 5px
+			display: flex								
+			div
+				display: flex
+				flex-direction: column
+				justify-content: center
+				margin-left: 8px
+				line-height: 8px
+				&_title
+				margin-top: 0
+				font-size: 8px
+				color: #fff
+				h2
+					margin-bottom: 0
+					font-size: 12px
+					font-weight: 600
 	
 			
