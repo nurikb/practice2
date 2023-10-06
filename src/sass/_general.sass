@@ -1,5 +1,6 @@
 header 
-	position: relative 
+	position: relative
+	height: 50px
 nav
 	width: 100%
 	position: fixed
@@ -9,8 +10,6 @@ nav
 	top: 0
 a 
 	text-decoration: none 
-.container
-	max-width: 1094px
 .menu 
 	display: flex 
 	justify-content: space-between 
@@ -28,6 +27,7 @@ a
 			border-right: none
 .subheader 
 	position: absolute 
+	top: 50px
 	width: 100% 
 	height: 87px 
 	background-color: rgba(0, 0, 0, .6) 
@@ -75,7 +75,6 @@ a
 	min-height: 800px 
 	background: url('/src/images/uber_bg.png') center center/cover no-repeat 
 	padding: 150px 0 135px 0
-	margin-top: 50px
 	&_header 
 		color: $white_color 
 		font-size: 60px 
@@ -120,18 +119,18 @@ a
 	padding: 20px 0 65px 0 
 	&_block 
 		display: flex 
-		justify-self: center 
-		align-items: center 
+		justify-content: center
 		margin-top: 35px 
-		&_round 
+		&_round
 			display: flex 
 			justify-content: center 
 			align-items: center 
+			align-self: baseline
 			margin-left: 26px 
 			width: 113px 
 			height: 113px 
 			border-radius: 100% 
-			background-color: $main-color 
+			background-color: $main-color
 		&_descr 
 			width: 343px 
 			margin-left: 25px 
@@ -411,7 +410,6 @@ footer
 				justify-content: center
 				margin-left: 8px
 				line-height: 8px
-				&_title
 				margin-top: 0
 				font-size: 8px
 				color: #fff
